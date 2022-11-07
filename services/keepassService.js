@@ -167,7 +167,7 @@ function KeepassService(keepassHeader, settings, passwordFileStoreRegistry, keep
 				};
 				// Entry properties defined by the parent group
 				entry.searchable = true;
-				if (group.enableSearching === false)
+				if (group.enableSearching === false || group.name == "Backup")
 					entry.searchable = false;
 				entry.groupIconId = group.icon;
 				entry.keys.push("groupName");
